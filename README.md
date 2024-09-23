@@ -158,7 +158,7 @@ To run this program, I have used online VS Code.
 
 ```
 //terminal code to run
-npx hardhat run scripts/deploy.js --network goerli
+npx hardhat run scripts/deploy.js --network sepolia
 ````
 
 ```javascript
