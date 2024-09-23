@@ -1,4 +1,4 @@
-# POLYGON PROOF OF STAKE (Building with Polygon Bridge)
+# POLYGON PROOF OF STAKE 
 
 # Description [MetaToken.sol file]
 
@@ -8,8 +8,7 @@ This Solidity code defines a smart contract called MetaToken, which is an ERC-72
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .sol , example: fileName.sol
+To run this program, I have used VS Code.
 
 SMART CONTRACT CODE:
 
@@ -54,10 +53,10 @@ The contract creates a private Counters.Counter variable called _tokenIds to kee
 
 ```solidity
 
-constructor() ERC721("Spiderman", "kh") {}
+constructor() ERC721("Spiderman", "dj") {}
 
 ```
-The contract's constructor is defined, which sets the name and symbol for the NFT token. In this case, the NFT's name is set to "Spiderman" and its symbol to "kh".
+The contract's constructor is defined, which sets the name and symbol for the NFT token. In this case, the NFT's name is set to "Spiderman" and its symbol to "dj".
 
 ```solidity
 
@@ -88,8 +87,7 @@ This code is a JavaScript script that interacts with Ethereum smart contracts us
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .js , example: fileName.js
+To run this program, I have used VS Code.
 ```
 //terminal code to run
 npx hardhat run scripts/dbridge.js --network goerli
@@ -100,9 +98,9 @@ npx hardhat run scripts/dbridge.js --network goerli
 const hre = require("hardhat");
 const tokenJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 
-const tokenAddress = "0xFFDC77894c932aaf8ca4C3eF87230AcA0dFA61B5" ; 
+const tokenAddress = "0x5b6b8c88B89149f920D674B844bd79154B5a9AD9" ; 
 const tokenABI = tokenJSON.abi;
-const walletAddress = "0x12D44d037Feaa703eC8031FE16572c4088ED3E5E";
+const walletAddress = "0xAABFa817c27bd98fb75DF05Cdc27E631d315852e";
 
 const fxRootContractABI = require("../fxRootContractABI.json");
 const fxERC21RootAddress = "0xF9bc4a80464E48369303196645e876c8C7D972de";
@@ -156,8 +154,7 @@ This code is a JavaScript script that uses Hardhat, an Ethereum development envi
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .js , example: fileName.js
+To run this program, I have used online VS Code.
 
 ```
 //terminal code to run
@@ -200,9 +197,7 @@ This code is a JavaScript script that uses Hardhat, an Ethereum development envi
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .js , example: fileName.js
-
+To run this program, I have used online VS Code.
 ```
 //terminal code to run
 npx hardhat run scripts/deploy.js --network mumbai
@@ -214,9 +209,9 @@ const hre = require("hardhat");
 const tokenContractJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 require('dotenv').config()
 
-const tokenAddress = "0xdA93e4Bd10064aa1E176e3d98E27E344D3fEa311"; 
+const tokenAddress = "0x5b6b8c88B89149f920D674B844bd79154B5a9AD9"; 
 const tokenABI = tokenContractJSON.abi;
-const walletAddress = "0x12D44d037Feaa703eC8031FE16572c4088ED3E5E"; 
+const walletAddress = "0xAABFa817c27bd98fb75DF05Cdc27E631d315852e"; 
 
 async function main() {
 
@@ -259,8 +254,7 @@ This code is a JavaScript script that uses Hardhat, an Ethereum development envi
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .js , example: fileName.js
+To run this program, I have used online VS Code.
 
 ```
 //terminal code to run
@@ -273,9 +267,9 @@ const hre = require("hardhat");
 const tokenContractJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 require('dotenv').config()
 
-const tokenAddress = "0xFFDC77894c932aaf8ca4C3eF87230AcA0dFA61B5"; // place your erc20 contract address here
+const tokenAddress = "0x5b6b8c88B89149f920D674B844bd79154B5a9AD9"; // place your erc20 contract address here
 const tokenABI = tokenContractJSON.abi;
-const walletAddress = "0x12D44d037Feaa703eC8031FE16572c4088ED3E5E"; // place your public address for your wallet here
+const walletAddress = "0xAABFa817c27bd98fb75DF05Cdc27E631d315852e"; // place your public address for your wallet here
 
 async function main() {
 
@@ -325,9 +319,7 @@ This code is a JavaScript script that uses Hardhat, an Ethereum development envi
 
 ### Executing program
 
-To run this program, I have used online Gitpod website. You can visit the Gitpod website at https://www.gitpod.io/ .
-Extension used for creating a new file is .js , example: fileName.js
-
+To run this program, I have used online VS Code.
 ```
 //terminal code to run
 npx hardhat run scripts/prompt.js --network goerli
@@ -339,9 +331,9 @@ const hre = require("hardhat");
 const tokenContractJSON = require("../artifacts/contracts/MetaToken.sol/MetaToken.json");
 require('dotenv').config()
 
-const tokenAddress = "0xFFDC77894c932aaf8ca4C3eF87230AcA0dFA61B5"; 
+const tokenAddress = "0x5b6b8c88B89149f920D674B844bd79154B5a9AD9"; 
 const tokenABI = tokenContractJSON.abi;
-const walletAddress = "0x12D44d037Feaa703eC8031FE16572c4088ED3E5E"; 
+const walletAddress = "0xAABFa817c27bd98fb75DF05Cdc27E631d315852e"; 
 
 async function main() {
 
@@ -379,9 +371,8 @@ The script uses the main().catch() pattern to handle errors in the asynchronous 
 
 ## Authors
 
-Khushi 
-[khushiawadh0829@gmail.com]
-[21CBT1050@cuchd.in]
+Divij Shukla
+divij.shukla2003@gmail.com
 
 ## License
 
